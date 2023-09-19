@@ -15,17 +15,19 @@ import java.util.List;
 @Controller
 public class HelloController {
 
-	@RequestMapping("/")
+	@RequestMapping("/controller")
 	public String index() {
 			return "index";
-	}
+	}// trả về file jsp
 
 	@RequestMapping(value = "/hello", method = RequestMethod.GET)
 	public String greeting(@RequestParam(name = "person") String person,
                            @RequestParam(name = "country", required = false, defaultValue = "Viet Nam") String country,
+                           @RequestParam(name = "age", required = false,defaultValue = "18") Integer age,
                            Model model) {
-       model.addAttribute("peronName", person);
+       model.addAttribute("personName", person);
 	   model.addAttribute("country", country);
+	   model.addAttribute("age", age);
 
 		return "helloWorld/greeting";
 	}
