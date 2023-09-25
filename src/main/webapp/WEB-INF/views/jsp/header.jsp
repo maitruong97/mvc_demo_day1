@@ -8,18 +8,19 @@
     <meta name="author" content="">
     <link rel="icon" href="https://getbootstrap.com/favicon.ico">
     <title>Book management demo</title>
-    <link rel="stylesheet" href="/webjars/bootstrap/5.1.7/css/bootstrap.min.css">
-    <link rel="stylesheet " href="/resources/css/main.css">
+    <link rel="stylesheet" href="/src/main/webapp/resources/css/main.css">
+    <link rel="stylesheet" href="/webjars/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 </head>
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
-        <div class="navbar-header">
+        <div class="navbar-header align-content-center">
             <a class="navbar-brand" href="/">
                 Spring Web MVC Demo
             </a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
+        <div  class="navbar-header align-content-center">
             <ul class="nav navbar-nav">
                 <li class="active">
                     <a href="newBook"> Add book</a>
@@ -29,5 +30,4 @@
         </div>
 
     </div>
-
 </nav>

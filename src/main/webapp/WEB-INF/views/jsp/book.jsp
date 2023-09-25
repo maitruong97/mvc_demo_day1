@@ -11,7 +11,7 @@
         <div class="col-xs-12 col-sm-8 col-md-6">
 
             <%--@elvariable id="book" type=""--%>
-            <form:form action="${action}" method="post" modelAttribute="book">
+            <form:form action="${pageContext.request.getContextPath()}/${action}" method="post" modelAttribute="book">
                 <fieldset class="scheduler-border">
                     <legend class="scheduler-border">
                         <c:out value="${msg}"/>
@@ -22,6 +22,7 @@
                                 ID
                             </label>
                             <form:input path="id" type="text" class="form-control" id="id" placeholder="ID" disabled="true"/>
+                                <form:hidden path="id"/>
                                 <form:hidden path="bookDetails.id"/>
 
                         </div>
@@ -71,21 +72,18 @@
                             Category(*)
                         </label>
                         <form:select path="category.id" class="form-group">
-                            <form:option value="0"  label="=====Select====="/>
+<%--                            <form:option value="1"  label="IT Books"/>--%>
+<%--                            <form:option value="2"  label="Math Books"/>--%>
+                            <form:option value="0"  label="------Select-------"/>
                             <form:options items="${categoryList}" />
                         </form:select>
-
                     </div>
                         <br>
-
                     <button type="submit" class="btn btn-info">Save</button>
                 </fieldset>
             </form:form>
-
-            </div>
-
-    </div>
+            </div
         </div>
-
+    </div>
 </body>
 </html>

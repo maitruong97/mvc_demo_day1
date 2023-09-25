@@ -1,0 +1,14 @@
+mvc\controller\BookController.class
+mvc\registration\Gender.class
+mvc\controller\UserController.class
+mvc\controller\HelloController.class
+mvc\configuration\JPAConfig.class
+mvc\utils\CategoryUtils.class
+mvc\entity\BookDetailsEntity.class
+mvc\entity\CategoryEntity.class
+mvc\registration\User.class
+mvc\repository\CategoryRepository.class
+mvc\entity\BookEntity.class
+mvc\repository\BookRepositoryImpl.class
+mvc\repository\BookRepository.class
+mvc\main\main.class
