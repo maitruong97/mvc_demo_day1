@@ -4,54 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c49e5b19-ab53-4654-bcb9-0689c41d7dfe" name="Changes" comment="update spring-web-mvc (exercise date 8)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/CartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/CartControllerScope.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/OrdersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/ScopesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/entity/AccountEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/entity/CartEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/entity/HelloMessageGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/entity/OrderDetailsEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/entity/OrdersEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/entity/ProductEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/repository/AccountRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/repository/OrderDetailsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/repository/OrdersRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jsp/shoppingcart/cart.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jsp/shoppingcart/checkout.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jsp/shoppingcart/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jsp/shoppingcart/orderDetails.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jsp/shoppingcart/orderList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jsp/shoppingcart/productLIst.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jsp/shoppingcart/success.jsp" afterDir="false" />
+    <list default="true" id="c49e5b19-ab53-4654-bcb9-0689c41d7dfe" name="Changes" comment="update spring-web-mvc(shoppingcart) (exercise date 8 + 9)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/entityRest/BookEntityRest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/mainRest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/entity/BookDetailsEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/entity/BookDetailsEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/repository/BookRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jsp/book.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jsp/book.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mvc/configuration/JPAConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mvc/controller/BookController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mvc/controller/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mvc/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mvc/entity/BookDetailsEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mvc/entity/BookEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mvc/entity/CategoryEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mvc/main/main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mvc/registration/Gender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mvc/registration/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mvc/repository/BookDetailsEntityRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mvc/repository/BookRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mvc/repository/CategoryRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mvc/utils/CategoryUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/mvc_hello-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jsp/helloWorld/greeting.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jsp/helloWorld/greeting.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,25 +48,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable&quot;: &quot;ALL&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/maitr/Downloads/demo-spring-boot1&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;build.tools&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;a0567f6147ab78904100d5322ef7f13c&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "ALL",
+    "full.screen.before.presentation.mode": "false",
+    "last_opened_file_path": "C:/Users/maitr/IdeaProjects/ProjectSpring/mvc_demo_day1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "build.tools",
+    "spring.configuration.checksum": "a0567f6147ab78904100d5322ef7f13c"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\maitr\IdeaProjects\default\mvc_demo_day1\WEB-INF" />
@@ -127,8 +84,11 @@
       <predefined_log_file id="Tomcat Host Manager Log" />
       <option name="adminPort" value="8006" />
       <option name="catalinaBase" value="C:\Users\maitr\.SmartTomcat\mvc_demo_day1\mvc_demo_day1" />
-      <option name="contextPath" value="/" />
+      <option name="contextPath" value="/demo" />
       <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="envOptions">
+        <map />
+      </option>
       <option name="extraClassPath" value="" />
       <option name="port" value="8082" />
       <option name="tomcatInfo">
@@ -207,7 +167,8 @@
       <workItem from="1696251219987" duration="43000" />
       <workItem from="1696252761120" duration="27000" />
       <workItem from="1696252798937" duration="4000" />
-      <workItem from="1696334953477" duration="1571000" />
+      <workItem from="1696334953477" duration="1851000" />
+      <workItem from="1696337437845" duration="1051000" />
     </task>
     <task id="LOCAL-00001" summary="update spring-web-mvc (exercise date 7)">
       <created>1695112492295</created>
@@ -223,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695646149343</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update spring-web-mvc(shoppingcart) (exercise date 8 + 9)">
+      <created>1696337231448</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696337231448</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,7 +211,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update spring-web-mvc (exercise date 7)" />
     <MESSAGE value="update spring-web-mvc (exercise date 8)" />
-    <option name="LAST_COMMIT_MESSAGE" value="update spring-web-mvc (exercise date 8)" />
+    <MESSAGE value="update spring-web-mvc(shoppingcart) (exercise date 8 + 9)" />
+    <option name="LAST_COMMIT_MESSAGE" value="update spring-web-mvc(shoppingcart) (exercise date 8 + 9)" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
