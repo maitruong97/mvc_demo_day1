@@ -35,7 +35,7 @@ public class BookController {
         model.addAttribute("bookEntityList",bookEntityList);
         return "home";
     }
-    @RequestMapping(value = "/search", method = GET)
+    @RequestMapping(value = "/search", method = RequestMethod.GET)
     public String search(@RequestParam("searchInput") String searchInput,Model model){
         List<BookEntity> resultList;
         if (searchInput.isEmpty()){
@@ -47,10 +47,11 @@ public class BookController {
         return "home";
     }
     @RequestMapping(value = "/newBook", method = GET)
-    public String showNewBook(Model model){
-        model.addAttribute("book", new BookEntity());
-        model.addAttribute("msg","Add a new book");
-        model.addAttribute("action","newBook");
+        public String showNewBook(Model model){
+            model.addAttribute("book", new BookEntity());
+            model.addAttribute("msg","Add a new book");
+            model.addAttribute("action","newBook");
+        setCategoryDropDownList(model);
         return"book";
     }
     @RequestMapping(value = "/newBook",method = POST)
@@ -58,7 +59,7 @@ public class BookController {
         bookRepository.save(book);
         return "redirect:/";
     }
-    @RequestMapping(value = "/edit/{id}", method = GET)
+    @RequestMapping(value = "/edit/{id}", method = RequestMethod.GET)
         public String showEditBook(Model model,@PathVariable int id){
             model.addAttribute("book",bookRepository.findById(id));
             model.addAttribute("msg","Update book information");
@@ -68,7 +69,7 @@ public class BookController {
 
             return "book";
     }
-//    @RequestMapping(value = "/updateBook", method = POST)
+//    @RequestMapping(value = "/updateBook", method = RequestMethod.POST)
 //    public String updateBook(@ModelAttribute BookEntity book){
 //        CategoryEntity categoryEntity = CategoryUtils.getBookCategory(book.getCategory().getId());
 //        book.setCategory(categoryEntity);

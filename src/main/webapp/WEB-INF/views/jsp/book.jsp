@@ -7,11 +7,9 @@
 <jsp:include page="header.jsp"/>
 <body>
 <div class="container" style="margin-top:60px">
-    <div class="row">
-        <div class="col-xs-12 col-sm-8 col-md-6">
-
+        <div class="col-md-4">
             <%--@elvariable id="book" type=""--%>
-            <form:form action="${pageContext.request.getContextPath()}/${action}" method="post" modelAttribute="book">
+            <form:form action="${pageContext.request.getContextPath()}/updateBook" method="post" modelAttribute="book">
                 <fieldset class="scheduler-border">
                     <legend class="scheduler-border">
                         <c:out value="${msg}"/>
@@ -62,7 +60,7 @@
                     </div>
                     <div class="form-group">
                         <label class="control-label">
-                            Publish Date
+                            Publish Date (*)
                         </label>
                         <form:input path="bookDetails.publishDate" type="date" class="form-control" id="id" placeholder="PublishDate" required="true"/>
 
@@ -75,15 +73,17 @@
 <%--                            <form:option value="1"  label="IT Books"/>--%>
 <%--                            <form:option value="2"  label="Math Books"/>--%>
                             <form:option value="0"  label="------Select-------"/>
-                            <form:options items="${categoryList}" />
+                            <form:options items="${categoryList}"/>
                         </form:select>
                     </div>
                         <br>
                     <button type="submit" class="btn btn-info">Save</button>
                 </fieldset>
             </form:form>
-            </div
         </div>
     </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.4.12/jquery.min.js/"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+<script src="${pageContext.request.getContextPath()}/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
 </body>
 </html>

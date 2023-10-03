@@ -1,6 +1,8 @@
 package mvc.controller;
 
 
+import mvc.registration.Gender;
+import mvc.registration.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -12,13 +14,19 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.ArrayList;
 import java.util.List;
 
-@Controller
+@RestController
 public class HelloController {
 
-	@RequestMapping("/controller")
-	public String index() {
-			return "index";
-	}// trả về file jsp
+//	@RequestMapping("/controller")
+//	public String index() {
+//			return "index";
+//	}// trả về file jsp
+@RequestMapping(value = "/rest-test")
+public User showRegistrationForm(Model model){
+	User user = new User();
+	user.setName("MaiTruong");
+	return user;
+}
 
 	@RequestMapping(value = "/hello", method = RequestMethod.GET)
 	public String greeting(@RequestParam(name = "person") String person,

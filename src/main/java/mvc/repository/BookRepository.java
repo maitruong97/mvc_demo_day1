@@ -20,8 +20,8 @@ public interface BookRepository extends CrudRepository<BookEntity,Integer> {
 //    BookEntity findOne(int id);
 //
 //    Object findAll();
-////    List<BookEntity> findAll();
-////    void deleteById(int id);
+//    List<BookEntity> findAll();
+//    void deleteById(int id);
 ////
 //////    List<BookEntity> search(String searchInput);
 //////    public Object save(BookEntity book);
